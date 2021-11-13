@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+
+:root {
+  --rootPale: #f2f3ae;
+  --rootLightOrange: #edd382;
+  --rootOrange: #fc9e4f;
+  --rootRed: #f4442e;
+  --rootGreen: #6c9a14;
+}
+
+.news-container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.topics-top,
+.news-top {
+  border-bottom: solid 0.2rem var(--rootGreen);
+  padding: 0.7rem 0;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+  width: 30%;
+}
+
+.topic-child {
+  /* border-left: solid 0.2rem var(--rootGreen); */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.topic-child::before {
+  content: "";
+  height: 40%;
+  width: 0.2rem;
+  background: var(--rootGreen);
+  color: var(--rootGreen);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.topic-title {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  margin-bottom: 0.3rem;
+}
+
+.news {
+  margin-top: 3rem;
+}
+
+.news-child {
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
